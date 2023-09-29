@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
     trigger('myAnim2',[
       transition(':enter',[
         style({opacity:0}),
-        animate('0.6s',style({opacity:1}))
+        animate('0.3s',style({opacity:1}))
       ])
     ])
   ]
