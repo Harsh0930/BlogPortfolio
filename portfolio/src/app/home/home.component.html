@@ -15,20 +15,26 @@
 <!-- Second Section  -->
 <section [@myAnim] class="row mt-5">
 <section class="title_section pt-5">
-    <h2  class="title text-uppercase text-light display-1 fw-bold text-center">Frontend Developer</h2>
-    <div class="d-flex justify-content-center"><hr class="line_one rounded-5"></div>
-    <p class="title_desc text-center px-4 fs-7 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nostrum ipsam, error recusandae exercitationem, repellat alias quasi similique eum incidunt, delectus explicabo sint asperiores voluptate! Earum optio obcaecati dolorem unde.</p>
+    <h2  class="title  fw-semibold text-center pt-3">Modern Tech</h2>
+    <blockquote class="subtitle text-center text-uppercase fs-4">Blog Site</blockquote>
+    <div class="d-flex justify-content-center py-2"><hr class="line_one rounded-5"></div>
+    <p class="title_desc text-center px-4 fs-6 mt-3 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nostrum ipsam, error recusandae exercitationem, repellat alias quasi similique eum incidunt, delectus explicabo sint asperiores voluptate! Earum optio obcaecati dolorem unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odit iure recusandae illum labore error quis eos, adipisci maiores alias numquam voluptatibus sit tempore provident, veritatis autem. Fugiat, enim iure.
+    </p>
     <div class="button_container d-flex justify-content-center"><button class="contact_button my-4" mat-icon-button mat-ripple (click)="expandMore()"><mat-icon>{{isIconClicked?'expand_less':'expand_more'}}</mat-icon></button></div>
     <section id="dynamic_container" class="row my-5" *ngIf="isExpandMoreVisible" [@myAnim2]>
         <!-- col1 -->
         <section class="branding-projects col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
-            <img src="../../assets/pic1.webp" class="image_one img-fluid rounded-4" alt="pic1">
+            
         </section>
         <!-- col2 -->
-        <section class="branding_projects col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
-            <img src="../../assets/pic2.webp" class="image_one img-fluid  rounded-4" alt="pic1">
+        <section class="branding_projects col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center px-4">
+            <!-- Contact form Component  -->
+            <app-contact-form></app-contact-form>
         </section>
     </section>
 </section>
 </section>
+<!-- Technologies Component  -->
+<!-- <app-technologies></app-technologies> -->
 </main>

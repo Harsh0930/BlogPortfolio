@@ -1,20 +1,36 @@
 .list_links:hover{
 border-bottom: 2px solid black;
 }
-
+.title{
+    background-image: linear-gradient(to bottom,#FF5B18,#0d13215e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 5.5rem;
+}
+.subtitle{
+    letter-spacing: 5px;
+    color: rgb(220, 220, 220);
+}
 .title_section{
-    background-color: #0d1321;
+    /* background-color: #0d1321; */
+    background-image: url('../../assets/bgpic.webp');
+    background-size:cover;
+    background-blend-mode: multiply;
+    background-color: #1717177b;
     height: auto;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 .line_one{
-    width: 30%;
-    border: 3px solid #FF5B1A;
+    width: 20%;
+    border: 1px solid #FF5B1A;
     opacity: 1;
 }
 .title_desc{
-    color: rgb(174, 174, 174);
+    color: rgb(201, 201, 201);
+    font-weight: 300 !important;
 }
 .contact_button{
     background-color: #FF5B1A !important;
@@ -27,6 +43,7 @@ border-bottom: 2px solid black;
 }
 .image_one{
     height: 350px;
+    box-shadow: rgba(189, 189, 189, 0.2) 0px 2px 8px 0px;
 }
 .image_one:hover{
     transform:scale(1.1);

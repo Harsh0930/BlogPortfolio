@@ -1,0 +1,16 @@
+.form_heading{
+    font-size:20px;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    font-weight:600;
+    color: #FF5B1A;
+}
+.form_headingtwo{
+    font: 11px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: whitesmoke;
+}
+.submit_button{
+    background-color: #FF5B1A !important;
+}

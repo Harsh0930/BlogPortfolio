@@ -1,0 +1,42 @@
+<section class="main">
+    <h1 class="form_heading">Join Our Blogging Team:<br></h1>
+    <span class="form_headingtwo">Your Input, Our Inspiration</span>
+    <div class="blog_form mt-4">
+        <form  id="blog_form" #blogForm="ngForm" (ngSubmit)="onSubmit(blogForm)">
+            <!-- FullName  -->
+            <mat-form-field appearance="fill" class="w-100 my-1">
+                <mat-label>Full Name</mat-label>
+                <input type="text" matInput placeholder="Name" name="fullName" #fullName="ngModel" [(ngModel)]="blog.fullName" required>
+                <mat-error class="fs-6" *ngIf="fullName.errors?.['required']">Name is required</mat-error>
+            </mat-form-field>
+            <!-- email  -->
+            <mat-form-field appearance="fill" class="w-100 my-1">
+                <mat-label>Email</mat-label>
+                <input type="text" matInput placeholder="E-mail" name="email" #email="ngModel" [(ngModel)]="blog.email" required>
+                <mat-error class="fs-6" *ngIf="email.errors?.['required']">Email is required</mat-error>
+            </mat-form-field>
+            <!-- title  -->
+            <mat-form-field appearance="fill" class="w-100 my-1">
+                <mat-label>Title</mat-label>
+                <input type="text" matInput placeholder="Title" name="title" #title="ngModel" [(ngModel)]="blog.title" required>
+                <mat-error class="fs-6" *ngIf="title.errors?.['required']">Title is required</mat-error>
+            </mat-form-field>
+            <!-- SubTitle  -->
+            <mat-form-field appearance="fill" class="w-100 my-1">
+                <mat-label>Sub Title</mat-label>
+                <input type="text" matInput placeholder="Name" name="subTitle" #subTitle="ngModel" [(ngModel)]="blog.subTitle" required>
+                <mat-error class="fs-6" *ngIf="subTitle.errors?.['required']">Sub Title is required</mat-error>
+            </mat-form-field>
+             <!-- Message  -->
+             <mat-form-field appearance="fill" class="w-100 my-1">
+                <mat-label>Blog Description</mat-label>
+                <textarea type="text" matInput placeholder="Enter Your Thoughts" name="message" #message="ngModel" [(ngModel)]="blog.message" required rows="auto"></textarea>
+                <mat-error class="fs-6" *ngIf="message.errors?.['required']">Message is required</mat-error>
+            </mat-form-field>
+            <div class="mt-2">
+                <button class="submit_button text-light" mat-raised-button matRipple type="submit" [disabled]="blogForm.invalid">Submit</button>
+                <button class="btn btn-danger ms-3" matRipple type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+</section>
